@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1DC4DF9-B04B-4BA9-A930-F2A9A5374BE6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeBehind</RootNamespace>
+    <AssemblyName>CodeBehind</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201805270002214_addFinalDatesheetToDB.cs" />
+    <Compile Include="Migrations\201805270002214_addFinalDatesheetToDB.Designer.cs">
+      <DependentUpon>201805270002214_addFinalDatesheetToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805270007136_addSessionTofinalDatesheetinDb.cs" />
+    <Compile Include="Migrations\201805270007136_addSessionTofinalDatesheetinDb.Designer.cs">
+      <DependentUpon>201805270007136_addSessionTofinalDatesheetinDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_finalDatesheet.cs" />
+    <Compile Include="Migrations\201802241852159_InitialModelUserClass.cs" />
+    <Compile Include="Migrations\201802241852159_InitialModelUserClass.Designer.cs">
+      <DependentUpon>201802241852159_InitialModelUserClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802241853551_PopulateUserTable.cs" />
+    <Compile Include="Migrations\201802241853551_PopulateUserTable.Designer.cs">
+      <DependentUpon>201802241853551_PopulateUserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802251642476_AddDepartmentClassToDb.cs" />
+    <Compile Include="Migrations\201802251642476_AddDepartmentClassToDb.Designer.cs">
+      <DependentUpon>201802251642476_AddDepartmentClassToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802251703096_AddSemesterAndCourseClassToDb.cs" />
+    <Compile Include="Migrations\201802251703096_AddSemesterAndCourseClassToDb.Designer.cs">
+      <DependentUpon>201802251703096_AddSemesterAndCourseClassToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802251706078_PopulateSemesterAndCourseTableWithData.cs" />
+    <Compile Include="Migrations\201802251706078_PopulateSemesterAndCourseTableWithData.Designer.cs">
+      <DependentUpon>201802251706078_PopulateSemesterAndCourseTableWithData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802260757335_AddHolidayClassToDb.cs" />
+    <Compile Include="Migrations\201802260757335_AddHolidayClassToDb.Designer.cs">
+      <DependentUpon>201802260757335_AddHolidayClassToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802260834461_ChangesIntbl_courseTable.cs" />
+    <Compile Include="Migrations\201802260834461_ChangesIntbl_courseTable.Designer.cs">
+      <DependentUpon>201802260834461_ChangesIntbl_courseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802260937435_Addtbl_subjectClassToDb.cs" />
+    <Compile Include="Migrations\201802260937435_Addtbl_subjectClassToDb.Designer.cs">
+      <DependentUpon>201802260937435_Addtbl_subjectClassToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802261726082_AddRelationToSemesterAndCourses.cs" />
+    <Compile Include="Migrations\201802261726082_AddRelationToSemesterAndCourses.Designer.cs">
+      <DependentUpon>201802261726082_AddRelationToSemesterAndCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802261733197_RelationBetweensemesterandcourses.cs" />
+    <Compile Include="Migrations\201802261733197_RelationBetweensemesterandcourses.Designer.cs">
+      <DependentUpon>201802261733197_RelationBetweensemesterandcourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802261747498_removeRelationbtwnsemesterandsemesterclass.cs" />
+    <Compile Include="Migrations\201802261747498_removeRelationbtwnsemesterandsemesterclass.Designer.cs">
+      <DependentUpon>201802261747498_removeRelationbtwnsemesterandsemesterclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802261756301_RemoveRelationbtwncoursesandsemestertable.cs" />
+    <Compile Include="Migrations\201802261756301_RemoveRelationbtwncoursesandsemestertable.Designer.cs">
+      <DependentUpon>201802261756301_RemoveRelationbtwncoursesandsemestertable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802261907285_ClearALl.cs" />
+    <Compile Include="Migrations\201802261907285_ClearALl.Designer.cs">
+      <DependentUpon>201802261907285_ClearALl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802261909323_AddTotoalNumberOfSemesterTOCourseTable.cs" />
+    <Compile Include="Migrations\201802261909323_AddTotoalNumberOfSemesterTOCourseTable.Designer.cs">
+      <DependentUpon>201802261909323_AddTotoalNumberOfSemesterTOCourseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802261913107_ADdCourseRelation.cs" />
+    <Compile Include="Migrations\201802261913107_ADdCourseRelation.Designer.cs">
+      <DependentUpon>201802261913107_ADdCourseRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802281811048_ModifyInTableSubject.cs" />
+    <Compile Include="Migrations\201802281811048_ModifyInTableSubject.Designer.cs">
+      <DependentUpon>201802281811048_ModifyInTableSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802281813093_AddSubjectTableToDb.cs" />
+    <Compile Include="Migrations\201802281813093_AddSubjectTableToDb.Designer.cs">
+      <DependentUpon>201802281813093_AddSubjectTableToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802281825006_AddTableDateSheetToDb.cs" />
+    <Compile Include="Migrations\201802281825006_AddTableDateSheetToDb.Designer.cs">
+      <DependentUpon>201802281825006_AddTableDateSheetToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802281829317_addSubjectDatesheettabletodb.cs" />
+    <Compile Include="Migrations\201802281829317_addSubjectDatesheettabletodb.Designer.cs">
+      <DependentUpon>201802281829317_addSubjectDatesheettabletodb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802281831480_addblocktableToDb.cs" />
+    <Compile Include="Migrations\201802281831480_addblocktableToDb.Designer.cs">
+      <DependentUpon>201802281831480_addblocktableToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802281939184_addTypeTableToDb.cs" />
+    <Compile Include="Migrations\201802281939184_addTypeTableToDb.Designer.cs">
+      <DependentUpon>201802281939184_addTypeTableToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802281942409_AddLinkbtwntypeandsubject.cs" />
+    <Compile Include="Migrations\201802281942409_AddLinkbtwntypeandsubject.Designer.cs">
+      <DependentUpon>201802281942409_AddLinkbtwntypeandsubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802281943267_PopulateTypeTableWithData.cs" />
+    <Compile Include="Migrations\201802281943267_PopulateTypeTableWithData.Designer.cs">
+      <DependentUpon>201802281943267_PopulateTypeTableWithData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803061644590_CheckForUpdate.cs" />
+    <Compile Include="Migrations\201803061644590_CheckForUpdate.Designer.cs">
+      <DependentUpon>201803061644590_CheckForUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803061646312_CheckForUpdate1.cs" />
+    <Compile Include="Migrations\201803061646312_CheckForUpdate1.Designer.cs">
+      <DependentUpon>201803061646312_CheckForUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803061724200_addDateSheetComplete.cs" />
+    <Compile Include="Migrations\201803061724200_addDateSheetComplete.Designer.cs">
+      <DependentUpon>201803061724200_addDateSheetComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803061741104_addhiftClassToDb.cs" />
+    <Compile Include="Migrations\201803061741104_addhiftClassToDb.Designer.cs">
+      <DependentUpon>201803061741104_addhiftClassToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803062009088_addhiftClassToDb1.cs" />
+    <Compile Include="Migrations\201803062009088_addhiftClassToDb1.Designer.cs">
+      <DependentUpon>201803062009088_addhiftClassToDb1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803071753208_restoreToPreviousVersion.cs" />
+    <Compile Include="Migrations\201803071753208_restoreToPreviousVersion.Designer.cs">
+      <DependentUpon>201803071753208_restoreToPreviousVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803071812575_restoreToPreviousVersion1.cs" />
+    <Compile Include="Migrations\201803071812575_restoreToPreviousVersion1.Designer.cs">
+      <DependentUpon>201803071812575_restoreToPreviousVersion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803071820368_restoreToPreviousVersion2.cs" />
+    <Compile Include="Migrations\201803071820368_restoreToPreviousVersion2.Designer.cs">
+      <DependentUpon>201803071820368_restoreToPreviousVersion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803100812208_recheck.cs" />
+    <Compile Include="Migrations\201803100812208_recheck.Designer.cs">
+      <DependentUpon>201803100812208_recheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803100813259_addSubjectForeignKeyTOsubjectDatesheet.cs" />
+    <Compile Include="Migrations\201803100813259_addSubjectForeignKeyTOsubjectDatesheet.Designer.cs">
+      <DependentUpon>201803100813259_addSubjectForeignKeyTOsubjectDatesheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060532242_AddBlockReferenceToSubjectDateSheetTable.cs" />
+    <Compile Include="Migrations\201804060532242_AddBlockReferenceToSubjectDateSheetTable.Designer.cs">
+      <DependentUpon>201804060532242_AddBlockReferenceToSubjectDateSheetTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.cs" />
+    <Compile Include="Migrations\201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.Designer.cs">
+      <DependentUpon>201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060539245_addBlocksetTableToDb.cs" />
+    <Compile Include="Migrations\201804060539245_addBlocksetTableToDb.Designer.cs">
+      <DependentUpon>201804060539245_addBlocksetTableToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060554215_addBlocksetTableToDb1.cs" />
+    <Compile Include="Migrations\201804060554215_addBlocksetTableToDb1.Designer.cs">
+      <DependentUpon>201804060554215_addBlocksetTableToDb1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060612191_UpdateDatabase.cs" />
+    <Compile Include="Migrations\201804060612191_UpdateDatabase.Designer.cs">
+      <DependentUpon>201804060612191_UpdateDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060628388_AddBlockSetDoobara.cs" />
+    <Compile Include="Migrations\201804060628388_AddBlockSetDoobara.Designer.cs">
+      <DependentUpon>201804060628388_AddBlockSetDoobara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060634091_Recheck.cs" />
+    <Compile Include="Migrations\201804060634091_Recheck.Designer.cs">
+      <DependentUpon>201804060634091_Recheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060707135_ClearAllDues.cs" />
+    <Compile Include="Migrations\201804060707135_ClearAllDues.Designer.cs">
+      <DependentUpon>201804060707135_ClearAllDues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060709088_AddAgainBlockSetToDb.cs" />
+    <Compile Include="Migrations\201804060709088_AddAgainBlockSetToDb.Designer.cs">
+      <DependentUpon>201804060709088_AddAgainBlockSetToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060739264_addDateSheetIdToBlockSet.cs" />
+    <Compile Include="Migrations\201804060739264_addDateSheetIdToBlockSet.Designer.cs">
+      <DependentUpon>201804060739264_addDateSheetIdToBlockSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804060743405_ChangesinBlockSet.cs" />
+    <Compile Include="Migrations\201804060743405_ChangesinBlockSet.Designer.cs">
+      <DependentUpon>201804060743405_ChangesinBlockSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805231836495_AddBlockIdToSubjectDateSheetTable.cs" />
+    <Compile Include="Migrations\201805231836495_AddBlockIdToSubjectDateSheetTable.Designer.cs">
+      <DependentUpon>201805231836495_AddBlockIdToSubjectDateSheetTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805241220271_AddiingSessionANdOddEvenTOSubjectDatesheet.cs" />
+    <Compile Include="Migrations\201805241220271_AddiingSessionANdOddEvenTOSubjectDatesheet.Designer.cs">
+      <DependentUpon>201805241220271_AddiingSessionANdOddEvenTOSubjectDatesheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805261745388_deleteTableTableSet.cs" />
+    <Compile Include="Migrations\201805261745388_deleteTableTableSet.Designer.cs">
+      <DependentUpon>201805261745388_deleteTableTableSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tbl_block.cs" />
+    <Compile Include="tbl_course.cs" />
+    <Compile Include="tbl_datesheet.cs" />
+    <Compile Include="tbl_department.cs" />
+    <Compile Include="tbl_semester.cs" />
+    <Compile Include="tbl_shift.cs" />
+    <Compile Include="tbl_subject.cs" />
+    <Compile Include="tbl_subjectDatesheet.cs" />
+    <Compile Include="tbl_type.cs" />
+    <Compile Include="tbl_users.cs" />
+    <Compile Include="_context.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802241852159_InitialModelUserClass.resx">
+      <DependentUpon>201802241852159_InitialModelUserClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802241853551_PopulateUserTable.resx">
+      <DependentUpon>201802241853551_PopulateUserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802251642476_AddDepartmentClassToDb.resx">
+      <DependentUpon>201802251642476_AddDepartmentClassToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802251703096_AddSemesterAndCourseClassToDb.resx">
+      <DependentUpon>201802251703096_AddSemesterAndCourseClassToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802251706078_PopulateSemesterAndCourseTableWithData.resx">
+      <DependentUpon>201802251706078_PopulateSemesterAndCourseTableWithData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802260757335_AddHolidayClassToDb.resx">
+      <DependentUpon>201802260757335_AddHolidayClassToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802260834461_ChangesIntbl_courseTable.resx">
+      <DependentUpon>201802260834461_ChangesIntbl_courseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802260937435_Addtbl_subjectClassToDb.resx">
+      <DependentUpon>201802260937435_Addtbl_subjectClassToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802261726082_AddRelationToSemesterAndCourses.resx">
+      <DependentUpon>201802261726082_AddRelationToSemesterAndCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802261733197_RelationBetweensemesterandcourses.resx">
+      <DependentUpon>201802261733197_RelationBetweensemesterandcourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802261747498_removeRelationbtwnsemesterandsemesterclass.resx">
+      <DependentUpon>201802261747498_removeRelationbtwnsemesterandsemesterclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802261756301_RemoveRelationbtwncoursesandsemestertable.resx">
+      <DependentUpon>201802261756301_RemoveRelationbtwncoursesandsemestertable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802261907285_ClearALl.resx">
+      <DependentUpon>201802261907285_ClearALl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802261909323_AddTotoalNumberOfSemesterTOCourseTable.resx">
+      <DependentUpon>201802261909323_AddTotoalNumberOfSemesterTOCourseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802261913107_ADdCourseRelation.resx">
+      <DependentUpon>201802261913107_ADdCourseRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802281811048_ModifyInTableSubject.resx">
+      <DependentUpon>201802281811048_ModifyInTableSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802281813093_AddSubjectTableToDb.resx">
+      <DependentUpon>201802281813093_AddSubjectTableToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802281825006_AddTableDateSheetToDb.resx">
+      <DependentUpon>201802281825006_AddTableDateSheetToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802281829317_addSubjectDatesheettabletodb.resx">
+      <DependentUpon>201802281829317_addSubjectDatesheettabletodb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802281831480_addblocktableToDb.resx">
+      <DependentUpon>201802281831480_addblocktableToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802281939184_addTypeTableToDb.resx">
+      <DependentUpon>201802281939184_addTypeTableToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802281942409_AddLinkbtwntypeandsubject.resx">
+      <DependentUpon>201802281942409_AddLinkbtwntypeandsubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802281943267_PopulateTypeTableWithData.resx">
+      <DependentUpon>201802281943267_PopulateTypeTableWithData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803061644590_CheckForUpdate.resx">
+      <DependentUpon>201803061644590_CheckForUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803061646312_CheckForUpdate1.resx">
+      <DependentUpon>201803061646312_CheckForUpdate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803061724200_addDateSheetComplete.resx">
+      <DependentUpon>201803061724200_addDateSheetComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803061741104_addhiftClassToDb.resx">
+      <DependentUpon>201803061741104_addhiftClassToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803062009088_addhiftClassToDb1.resx">
+      <DependentUpon>201803062009088_addhiftClassToDb1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803071753208_restoreToPreviousVersion.resx">
+      <DependentUpon>201803071753208_restoreToPreviousVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803071812575_restoreToPreviousVersion1.resx">
+      <DependentUpon>201803071812575_restoreToPreviousVersion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803071820368_restoreToPreviousVersion2.resx">
+      <DependentUpon>201803071820368_restoreToPreviousVersion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803100813259_addSubjectForeignKeyTOsubjectDatesheet.resx">
+      <DependentUpon>201803100813259_addSubjectForeignKeyTOsubjectDatesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060532242_AddBlockReferenceToSubjectDateSheetTable.resx">
+      <DependentUpon>201804060532242_AddBlockReferenceToSubjectDateSheetTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.resx">
+      <DependentUpon>201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060539245_addBlocksetTableToDb.resx">
+      <DependentUpon>201804060539245_addBlocksetTableToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060554215_addBlocksetTableToDb1.resx">
+      <DependentUpon>201804060554215_addBlocksetTableToDb1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060612191_UpdateDatabase.resx">
+      <DependentUpon>201804060612191_UpdateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060628388_AddBlockSetDoobara.resx">
+      <DependentUpon>201804060628388_AddBlockSetDoobara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060634091_Recheck.resx">
+      <DependentUpon>201804060634091_Recheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060707135_ClearAllDues.resx">
+      <DependentUpon>201804060707135_ClearAllDues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060709088_AddAgainBlockSetToDb.resx">
+      <DependentUpon>201804060709088_AddAgainBlockSetToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060739264_addDateSheetIdToBlockSet.resx">
+      <DependentUpon>201804060739264_addDateSheetIdToBlockSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804060743405_ChangesinBlockSet.resx">
+      <DependentUpon>201804060743405_ChangesinBlockSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805231836495_AddBlockIdToSubjectDateSheetTable.resx">
+      <DependentUpon>201805231836495_AddBlockIdToSubjectDateSheetTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805241220271_AddiingSessionANdOddEvenTOSubjectDatesheet.resx">
+      <DependentUpon>201805241220271_AddiingSessionANdOddEvenTOSubjectDatesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805261745388_deleteTableTableSet.resx">
+      <DependentUpon>201805261745388_deleteTableTableSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805270002214_addFinalDatesheetToDB.resx">
+      <DependentUpon>201805270002214_addFinalDatesheetToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805270007136_addSessionTofinalDatesheetinDb.resx">
+      <DependentUpon>201805270007136_addSessionTofinalDatesheetinDb.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
