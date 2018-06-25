@@ -12,5 +12,7 @@ namespace CodeBehind
         //public tbl_datesheet datesheet { get; set; }
         //public int tbl_datesheetId { get; set; }
         public string name { get; set; }
+
+        public int capacity { get; set; }
     }
 }

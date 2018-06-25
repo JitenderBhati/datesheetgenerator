@@ -26,7 +26,6 @@ F:\Project\LokeshProject\Form1\Form1\bin\Debug\CodeBehind.pdb
 F:\Project\LokeshProject\Form1\Form1\bin\Debug\CodeBehind.dll.config
 F:\Project\LokeshProject\Form1\Form1\bin\Debug\EntityFramework.xml
 F:\Project\LokeshProject\Form1\Form1\bin\Debug\EntityFramework.SqlServer.xml
-F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.csprojResolveAssemblyReference.cache
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.Form1.resources
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.MainPage.resources
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.ManageDateSheet.resources
@@ -37,3 +36,8 @@ F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.csproj.CopyComplete
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.exe
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.pdb
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.csproj.ResolveComReference.cache
+F:\Project\LokeshProject\Form1\Form1\bin\Debug\Form1.exe.manifest
+F:\Project\LokeshProject\Form1\Form1\bin\Debug\Form1.application
+F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.exe.manifest
+F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.application
+F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.csprojAssemblyReference.cache

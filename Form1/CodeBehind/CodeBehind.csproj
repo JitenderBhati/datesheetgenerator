@@ -52,6 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201805270002214_addFinalDatesheetToDB.cs" />
     <Compile Include="Migrations\201805270002214_addFinalDatesheetToDB.Designer.cs">
       <DependentUpon>201805270002214_addFinalDatesheetToDB.cs</DependentUpon>
@@ -60,6 +65,51 @@
     <Compile Include="Migrations\201805270007136_addSessionTofinalDatesheetinDb.Designer.cs">
       <DependentUpon>201805270007136_addSessionTofinalDatesheetinDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806251655045_PopulateTotblBlockInDatabase.cs" />
+    <Compile Include="Migrations\201806251655045_PopulateTotblBlockInDatabase.Designer.cs">
+      <DependentUpon>201806251655045_PopulateTotblBlockInDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251658135_PopulateTotblCourseinDatabase.cs" />
+    <Compile Include="Migrations\201806251658135_PopulateTotblCourseinDatabase.Designer.cs">
+      <DependentUpon>201806251658135_PopulateTotblCourseinDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251709359_PopulateTotblDepartmentinDatabase.cs" />
+    <Compile Include="Migrations\201806251709359_PopulateTotblDepartmentinDatabase.Designer.cs">
+      <DependentUpon>201806251709359_PopulateTotblDepartmentinDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251712186_PopulateTotblCourseFinalinDatabase.cs" />
+    <Compile Include="Migrations\201806251712186_PopulateTotblCourseFinalinDatabase.Designer.cs">
+      <DependentUpon>201806251712186_PopulateTotblCourseFinalinDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251715544_PopulateTbl_Subjecttableidatabase.cs" />
+    <Compile Include="Migrations\201806251715544_PopulateTbl_Subjecttableidatabase.Designer.cs">
+      <DependentUpon>201806251715544_PopulateTbl_Subjecttableidatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251734208_addCapacityofBlocktotblBlocktable.cs" />
+    <Compile Include="Migrations\201806251734208_addCapacityofBlocktotblBlocktable.Designer.cs">
+      <DependentUpon>201806251734208_addCapacityofBlocktotblBlocktable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251749516_populatetblblockwithcapacityinttable.cs" />
+    <Compile Include="Migrations\201806251749516_populatetblblockwithcapacityinttable.Designer.cs">
+      <DependentUpon>201806251749516_populatetblblockwithcapacityinttable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251823222_addtableStudentCapacityTodb.cs" />
+    <Compile Include="Migrations\201806251823222_addtableStudentCapacityTodb.Designer.cs">
+      <DependentUpon>201806251823222_addtableStudentCapacityTodb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251825240_Populatetblstudentcapacity.cs" />
+    <Compile Include="Migrations\201806251825240_Populatetblstudentcapacity.Designer.cs">
+      <DependentUpon>201806251825240_Populatetblstudentcapacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251947345_addTablecapacitycalcTodb.cs" />
+    <Compile Include="Migrations\201806251947345_addTablecapacitycalcTodb.Designer.cs">
+      <DependentUpon>201806251947345_addTablecapacitycalcTodb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251953587_UpdateTotblCapacityDb.cs" />
+    <Compile Include="Migrations\201806251953587_UpdateTotblCapacityDb.Designer.cs">
+      <DependentUpon>201806251953587_UpdateTotblCapacityDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_capacityCalc.cs" />
     <Compile Include="tbl_finalDatesheet.cs" />
     <Compile Include="Migrations\201802241852159_InitialModelUserClass.cs" />
     <Compile Include="Migrations\201802241852159_InitialModelUserClass.Designer.cs">
@@ -201,10 +251,6 @@
     <Compile Include="Migrations\201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.Designer.cs">
       <DependentUpon>201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804060539245_addBlocksetTableToDb.cs" />
-    <Compile Include="Migrations\201804060539245_addBlocksetTableToDb.Designer.cs">
-      <DependentUpon>201804060539245_addBlocksetTableToDb.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201804060554215_addBlocksetTableToDb1.cs" />
     <Compile Include="Migrations\201804060554215_addBlocksetTableToDb1.Designer.cs">
       <DependentUpon>201804060554215_addBlocksetTableToDb1.cs</DependentUpon>
@@ -257,6 +303,7 @@
     <Compile Include="tbl_department.cs" />
     <Compile Include="tbl_semester.cs" />
     <Compile Include="tbl_shift.cs" />
+    <Compile Include="tbl_studentCapacity.cs" />
     <Compile Include="tbl_subject.cs" />
     <Compile Include="tbl_subjectDatesheet.cs" />
     <Compile Include="tbl_type.cs" />
@@ -264,7 +311,20 @@
     <Compile Include="_context.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -370,9 +430,6 @@
     <EmbeddedResource Include="Migrations\201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.resx">
       <DependentUpon>201804060537196_RemoveBlockRefernceFromTableSubjectDatesheet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804060539245_addBlocksetTableToDb.resx">
-      <DependentUpon>201804060539245_addBlocksetTableToDb.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804060554215_addBlocksetTableToDb1.resx">
       <DependentUpon>201804060554215_addBlocksetTableToDb1.cs</DependentUpon>
     </EmbeddedResource>
@@ -411,6 +468,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805270007136_addSessionTofinalDatesheetinDb.resx">
       <DependentUpon>201805270007136_addSessionTofinalDatesheetinDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251655045_PopulateTotblBlockInDatabase.resx">
+      <DependentUpon>201806251655045_PopulateTotblBlockInDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251658135_PopulateTotblCourseinDatabase.resx">
+      <DependentUpon>201806251658135_PopulateTotblCourseinDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251709359_PopulateTotblDepartmentinDatabase.resx">
+      <DependentUpon>201806251709359_PopulateTotblDepartmentinDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251712186_PopulateTotblCourseFinalinDatabase.resx">
+      <DependentUpon>201806251712186_PopulateTotblCourseFinalinDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251715544_PopulateTbl_Subjecttableidatabase.resx">
+      <DependentUpon>201806251715544_PopulateTbl_Subjecttableidatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251734208_addCapacityofBlocktotblBlocktable.resx">
+      <DependentUpon>201806251734208_addCapacityofBlocktotblBlocktable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251749516_populatetblblockwithcapacityinttable.resx">
+      <DependentUpon>201806251749516_populatetblblockwithcapacityinttable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251823222_addtableStudentCapacityTodb.resx">
+      <DependentUpon>201806251823222_addtableStudentCapacityTodb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251825240_Populatetblstudentcapacity.resx">
+      <DependentUpon>201806251825240_Populatetblstudentcapacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251947345_addTablecapacitycalcTodb.resx">
+      <DependentUpon>201806251947345_addTablecapacitycalcTodb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251953587_UpdateTotblCapacityDb.resx">
+      <DependentUpon>201806251953587_UpdateTotblCapacityDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

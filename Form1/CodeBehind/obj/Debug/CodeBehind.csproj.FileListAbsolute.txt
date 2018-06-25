@@ -84,7 +84,6 @@ F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.restor
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addSubjectForeignKeyTOsubjectDatesheet.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.AddBlockReferenceToSubjectDateSheetTable.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.RemoveBlockRefernceFromTableSubjectDatesheet.resources
-F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addBlocksetTableToDb.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addBlocksetTableToDb1.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.UpdateDatabase.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.AddBlockSetDoobara.resources
@@ -96,7 +95,6 @@ F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.dll
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.pdb
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.ClearAllDues.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.AddAgainBlockSetToDb.resources
-F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.csprojResolveAssemblyReference.cache
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addDateSheetIdToBlockSet.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.ChangesinBlockSet.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.AddBlockIdToSubjectDateSheetTable.resources
@@ -104,3 +102,15 @@ F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.Addiin
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.deleteTableTableSet.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addFinalDatesheetToDB.resources
 F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addSessionTofinalDatesheetinDb.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.csprojAssemblyReference.cache
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.PopulateTotblBlockInDatabase.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.PopulateTotblCourseinDatabase.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.PopulateTotblDepartmentinDatabase.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.PopulateTotblCourseFinalinDatabase.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.PopulateTbl_Subjecttableidatabase.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addCapacityofBlocktotblBlocktable.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.populatetblblockwithcapacityinttable.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addtableStudentCapacityTodb.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.Populatetblstudentcapacity.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.addTablecapacitycalcTodb.resources
+F:\Project\LokeshProject\Form1\CodeBehind\obj\Debug\CodeBehind.Migrations.UpdateTotblCapacityDb.resources

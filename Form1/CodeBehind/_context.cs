@@ -23,6 +23,8 @@ namespace CodeBehind
         public DbSet<tbl_shift> Shift { get; set; }
         public DbSet<tbl_subjectDatesheet> SubjectDateSheet { get; set; }
         public DbSet<tbl_finalDatesheet> FinalDatesheet { get; set; }
+        public DbSet<tbl_studentCapacity> StudentCapacity { get; set; }
+        public DbSet<tbl_capacityCalc> CapacityCalc { get; set; }
         // public DbSet<tbl_BlockSet> BlockSets { get; set; }
 
 
