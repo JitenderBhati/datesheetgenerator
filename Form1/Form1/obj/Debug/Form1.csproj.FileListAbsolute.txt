@@ -41,3 +41,8 @@ F:\Project\LokeshProject\Form1\Form1\bin\Debug\Form1.application
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.exe.manifest
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.application
 F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.csprojAssemblyReference.cache
+F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.popup.resources
+F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.FirstPage.resources
+F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.Add_Department.resources
+F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.Add_Subject.resources
+F:\Project\LokeshProject\Form1\Form1\obj\Debug\Form1.Add_Course.resources

@@ -19,7 +19,8 @@ namespace Form1
 	public partial class MainPage : Form
 	{
 		int index;
-		StringBuilder blocksList=  new StringBuilder();
+        public static string getSetData = "";
+        StringBuilder blocksList=  new StringBuilder();
 		List<int> session = new List<int>()
 		{
 			2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028,
@@ -29,10 +30,11 @@ namespace Form1
 		DateTimePicker dtp = new DateTimePicker();
 		Rectangle _rect;
 		private _context _con;
+        static string userName;
 		public MainPage(string name)
 		{
 			InitializeComponent();
-			lbl_name.Text = name;
+            userName = name;
 			_con = new _context();            
 			dataGridView1.Controls.Add(dtp);
 			dtp.Visible = false;
@@ -207,7 +209,7 @@ namespace Form1
 				}
 			}
 
-		}
+		}       
 
 		private void dataGridView1_ColumnWidthChanged(object sender, DataGridViewColumnEventArgs e)
 		{
@@ -311,10 +313,7 @@ namespace Form1
                                     var years = Convert.ToInt32(SessionComboBox.SelectedItem);
                                     var capacityData = _con.CapacityCalc.SingleOrDefault(c => (c.tbl_shiftId == shift.id) && (c.tbl_blockId == checkboxid.id) && (c.year == years) && (c.date == dt));
                                     if(capacityData!=null)
-                                    {
-                                        MessageBox.Show("Capcity " + capacityData.capacity.ToString());
-                                        MessageBox.Show("Student " + studentCapacity.capacity.ToString());
-                                        MessageBox.Show("Chheck " + checkboxid.capacity.ToString());
+                                    {                                    
 
                                         if(capacityData.capacity==checkboxid.capacity)
                                         {
@@ -325,11 +324,18 @@ namespace Form1
                                         {
                                             checkFlag = true;
                                             MessageBox.Show("Block is not able to hold the student", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            popup obj = new popup(checkboxid.capacity-capacityData.capacity);
+                                            obj.Show();
+                                            this.Enabled = false;
                                         }
                                         else
                                         {
-                                            capacityData.capacity += studentCapacity.capacity;
-                                            _con.SaveChanges();
+                                            if (String.IsNullOrWhiteSpace(getSetData))
+                                            {
+                                                capacityData.capacity += studentCapacity.capacity;
+                                                _con.SaveChanges();
+                                            }                                          
+                                            
                                             var datas = new tbl_subjectDatesheet
                                             {
                                                 date = dt,
@@ -380,6 +386,35 @@ namespace Form1
                                         };
                                         _con.SubjectDateSheet.Add(datas);
                                         _con.SaveChanges();
+                                    }
+
+                                    if (String.IsNullOrWhiteSpace(getSetData))
+                                    {
+                                    }
+                                    else
+                                    { 
+                                        capacityData.capacity += Convert.ToInt32(getSetData);
+                                        _con.SaveChanges();
+
+                                        var datas = new tbl_subjectDatesheet
+                                        {
+                                            date = dt,
+                                            shift = _con.Shift.FirstOrDefault(c => c.shift == shifts),
+                                            subject = _con.Subject.FirstOrDefault(c => c.name == subjects),
+                                            block = checkboxid,
+                                            session = Convert.ToInt32(SessionComboBox.SelectedItem),
+                                            odd_even = oddComboBox.SelectedItem.ToString(),
+
+                                            datesheet = new tbl_datesheet
+                                            {
+                                                type = type,
+                                                course = course,
+                                                semester = semester
+                                            }
+                                        };
+                                        _con.SubjectDateSheet.Add(datas);
+                                        _con.SaveChanges();
+                                        dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Green;
                                     }
 
                                     
@@ -764,7 +799,15 @@ namespace Form1
 			}
 		}
 
-		private void btnexport_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+            FirstPage obj = new FirstPage(userName);
+            obj.Show();
+
+        }
+
+        private void btnexport_Click(object sender, EventArgs e)
 		{
 			try
 			{

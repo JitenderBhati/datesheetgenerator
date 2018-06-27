@@ -77,7 +77,6 @@
             this.txtbox_password.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtbox_password.Size = new System.Drawing.Size(202, 26);
             this.txtbox_password.TabIndex = 4;
-            this.txtbox_password.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -98,7 +97,6 @@
             this.txtbox_uname.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtbox_uname.Size = new System.Drawing.Size(204, 25);
             this.txtbox_uname.TabIndex = 2;
-            this.txtbox_uname.TextChanged += new System.EventHandler(this.txtbox_uname_TextChanged);
             // 
             // label1
             // 

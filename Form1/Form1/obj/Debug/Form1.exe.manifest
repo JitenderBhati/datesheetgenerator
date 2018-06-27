@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+lT2w8JTX1WU55h1nD+AY+u/+0zD3HaBW6rBZR7e9Fs=</dsig:DigestValue>
+        <dsig:DigestValue>58wh8azSxiJAiz0SNRi/ZQ0U98i4iWC3CQZaupdydaQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Form1.exe" size="470456">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Form1.exe" size="801208">
       <assemblyIdentity name="Form1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gQsWMFqDGO0Pf8B+OI38FxMKyFRSBdiCg92XphOFxOs=</dsig:DigestValue>
+        <dsig:DigestValue>oNEIG2dVjiOjgTztWpR4Z1clHf7bNcU8uxzqTtlmhdM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

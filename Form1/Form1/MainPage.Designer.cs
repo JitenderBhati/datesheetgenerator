@@ -30,13 +30,9 @@
         {
             System.Windows.Forms.Label Session;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbl_name = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnLogOut = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_addDateSheet = new System.Windows.Forms.Button();
@@ -69,8 +65,8 @@
             this.box_type = new System.Windows.Forms.ComboBox();
             this.btnexport = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             Session = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -96,54 +92,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(206, 62);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.lbl_name);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.btnLogOut);
-            this.panel2.Location = new System.Drawing.Point(836, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(212, 39);
-            this.panel2.TabIndex = 1;
-            // 
-            // lbl_name
-            // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lbl_name.Location = new System.Drawing.Point(47, 11);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(67, 18);
-            this.lbl_name.TabIndex = 2;
-            this.lbl_name.Text = "Jitender";
-            // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(41, 39);
-            this.panel5.TabIndex = 1;
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogOut.AutoSize = true;
-            this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
-            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogOut.FlatAppearance.BorderSize = 0;
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Location = new System.Drawing.Point(120, 0);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(92, 39);
-            this.btnLogOut.TabIndex = 0;
-            this.btnLogOut.UseVisualStyleBackColor = false;
-            this.btnLogOut.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -267,8 +215,8 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
@@ -279,14 +227,14 @@
             this.dateSelect,
             this.shiftSelect,
             this.SaveBtn});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.Color.DimGray;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -509,12 +457,26 @@
             this.btnexport.UseVisualStyleBackColor = true;
             this.btnexport.Click += new System.EventHandler(this.btnexport_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(903, 25);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(145, 19);
+            this.linkLabel1.TabIndex = 20;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Back to Main Menu";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1051, 540);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnexport);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.oddComboBox);
@@ -531,15 +493,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainPage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainPage_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -554,7 +514,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -562,11 +521,8 @@
         private System.Windows.Forms.ComboBox box_course;
         private System.Windows.Forms.ComboBox box_semester;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_addDateSheet;
-        private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label Types;
@@ -590,5 +546,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn SaveBtn;
         private System.Windows.Forms.Button btnexport;
         public System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

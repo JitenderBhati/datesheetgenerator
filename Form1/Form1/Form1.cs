@@ -14,21 +14,13 @@ namespace Form1
     public partial class Form1 : Form
     {
         private _context _con;
+      
         public Form1()
         {
             InitializeComponent();
             _con = new _context();
-        }
+        }     
 
-        private void txtbox_uname_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -46,11 +38,12 @@ namespace Form1
                 txtbox_password.Text = null;
             }
             else
-            {                
-                //MessageBox.Show("Login Successfully");
-                MainPage obj = new MainPage(data.uname);
+            {
+                //MessageBox.Show("Login Successfully");                
+                FirstPage obj = new FirstPage(data.uname);
                 this.Hide();
                 obj.Show();
+                
             }
             
         }
