@@ -25,7 +25,8 @@
     <ProductName>Datesheet Generator</ProductName>
     <PublisherName>J&amp;R Groups</PublisherName>
     <SuiteName>Datesheet Generator</SuiteName>
-    <ApplicationRevision>6</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -92,6 +93,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="201804060628388_AddBlockSetDoobara.cs" />
+    <Compile Include="201804060628388_AddBlockSetDoobara.Designer.cs">
+      <DependentUpon>201804060628388_AddBlockSetDoobara.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Course.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +147,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="201804060628388_AddBlockSetDoobara.resx">
+      <DependentUpon>201804060628388_AddBlockSetDoobara.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_Course.resx">
       <DependentUpon>Add_Course.cs</DependentUpon>
     </EmbeddedResource>

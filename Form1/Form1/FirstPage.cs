@@ -22,14 +22,13 @@ namespace Form1
 
         private void FirstPage_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             MainPage obj = new MainPage(userName);
-            this.Close();
             obj.Show();
+            this.Close();            
         }
 
         private void button1_Click(object sender, EventArgs e)

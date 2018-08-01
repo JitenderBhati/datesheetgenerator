@@ -259,10 +259,6 @@
     <Compile Include="Migrations\201804060612191_UpdateDatabase.Designer.cs">
       <DependentUpon>201804060612191_UpdateDatabase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804060628388_AddBlockSetDoobara.cs" />
-    <Compile Include="Migrations\201804060628388_AddBlockSetDoobara.Designer.cs">
-      <DependentUpon>201804060628388_AddBlockSetDoobara.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201804060634091_Recheck.cs" />
     <Compile Include="Migrations\201804060634091_Recheck.Designer.cs">
       <DependentUpon>201804060634091_Recheck.cs</DependentUpon>
@@ -435,9 +431,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804060612191_UpdateDatabase.resx">
       <DependentUpon>201804060612191_UpdateDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804060628388_AddBlockSetDoobara.resx">
-      <DependentUpon>201804060628388_AddBlockSetDoobara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804060634091_Recheck.resx">
       <DependentUpon>201804060634091_Recheck.cs</DependentUpon>

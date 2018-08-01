@@ -143,19 +143,17 @@ namespace Form1
                     dynamic txtSubCode = "txt_subcode" + i.ToString();
                     string dataSubject = ((TextBox)panel2.Controls[txtSubject]).Text;
                     string dataSubCode = ((TextBox)panel2.Controls[txtSubCode]).Text;
-
+                string subject = "("+dataSubCode + ") " + dataSubject;
                     //Checking with Subject Code
-
                     var data = new tbl_subject
                     {
-                        name = dataSubject,
+                        name = subject,
                         tbl_typeId = type.id,
                         tbl_courseId = course.id,
                         tbl_semesterId = sem.id
                     };
                     _con.Subject.Add(data);
-                    _con.SaveChanges();            
-               
+                    _con.SaveChanges();     
                               
             }
             if (MessageBox.Show("Subjects Saved!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
